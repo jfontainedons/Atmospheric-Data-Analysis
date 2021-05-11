@@ -221,7 +221,7 @@ void print_report(struct climate_info *states[], int num_states) {
             printf("Average Humidity: %.1Lf%%\n", (info->humidity / info->num_records));        // Calculate average humidity.
             printf("Average Temperature: %.1LfF\n", (info->temp / info->num_records));          // Calculate average temperature.
             printf("Max Temperature: %.1LfF\n", info->max_temp);
-            printf("Max Temperature on: %s", ctime(&info->max_temp_date));                      // Convert unix timestamp to string form).
+            printf("Max Temperature on: %s", ctime(&info->max_temp_date));                      // Convert unix timestamp to string form.
             printf("Min Temperature: %.1LfF\n", info->min_temp);
             printf("Min Temperature on: %s", ctime(&info->min_temp_date));                      // Convert unix timestamp to string form.
             printf("Lightning Strikes: %d\n", info->lightning_strikes);
